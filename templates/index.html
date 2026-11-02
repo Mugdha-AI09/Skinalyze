@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skinalyze</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Skinalyze</h1>
+        </div>
+        <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('tips') }}">Tips and Tricks</a>
+        <a href="{{ url_for('contact') }}">Contact us</a>
+        </nav>
+            
+        
+    </header>
+    <div class="container">
+        
+        <h2>Answer the following questions and get recommendations!!</h2>
+        <form action="/analyze" method="POST">
+            <label>Age:</label>
+            <input type="number" name="age" required>
+            <div class="error" id="age-error">Please enter a valid age (1-120).</div>
+            
+            <label>Skin Type:</label>
+            <select name="skin_type" required>
+                <option value="Oily">Oily</option>
+                <option value="Dry">Dry</option>
+                <option value="Combination">Combination</option>
+                <option value="Normal">Normal</option>
+            </select>
+            
+            <label>Primary Concern:</label>
+            <select name="primary_concern" required>
+                <option value="None">None</option>
+                <option value="Acne">Acne</option>
+                <option value="Dryness">Dryness</option>
+                <option value="Redness">Redness</option>
+                <option value="Wrinkles">Wrinkles</option>
+            </select>
+            
+            <label>Secondary Concerns (select at least one):</label>
+
+<div class="checkbox-group"> <label> <input type="checkbox" name="secondary_concerns" value="None"> None </label>
+
+<label>
+    <input type="checkbox" name="secondary_concerns" value="Acne"> Acne
+</label>
+
+<label>
+    <input type="checkbox" name="secondary_concerns" value="Dryness"> Dryness
+</label>
+
+<label>
+    <input type="checkbox" name="secondary_concerns" value="Redness"> Redness
+</label>
+
+<label>
+    <input type="checkbox" name="secondary_concerns" value="Wrinkles"> Wrinkles
+</label>
+
+</div>
+
+<div class="error" id="concerns-error"> Please select at least one secondary concern. </div>
+            
+            <label>Sunscreen Use:</label>
+            <select name="sunscreen" required>
+                <option value="Daily">Daily</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Rarely/never">Rarely/Never</option>
+            </select>
+            
+            <label>Cleansing Frequency:</label>
+            <select name="cleansing" required>
+                <option value="Twice daily">Twice Daily</option>
+                <option value="Once daily">Once Daily</option>
+                <option value="Less often">Less Often</option>
+            </select>
+            
+            <label>Diet:</label>
+            <select name="diet" required>
+                <option value="Balanced">Balanced</option>
+                <option value="High sugar/fat">High Sugar/Fat</option>
+                <option value="Mostly plant-based">Mostly Plant-Based</option>
+            </select>
+            
+            <label>Sleep Habits:</label>
+            <select name="sleep" required>
+                <option value="7+ hours">7+ Hours</option>
+                <option value="5-7 hours">5-7 Hours</option>
+                <option value="Less than 5 hours">Less than 5 Hours</option>
+            </select>
+            
+            <input type="submit" value="Analyze My Skin">
+        </form>
+        
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

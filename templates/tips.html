@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skinalyze - Tips & Tricks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Skinalyze</h1>
+    </div>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('quiz') }}">Take Quiz</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Tips & Tricks</h2>
+    <p>Taking care of your skin doesn't have to be complicated. At Skinalyze, we believe in smart skincare — here are some simple yet powerful tips to help you glow every day!</p>
+  </div>
+  <section class="features">
+  <div class="feature">
+    <h3>1. Master Your Daily Routine</h3>
+    <ul>
+      <li>Cleanse your face twice a day to remove dirt and excess oil.</li>
+      <li>Moisturize even if you have oily skin — hydration is key!</li>
+      <li>Sunscreen is a must — wear SPF 30+ daily, even indoors.</li>
+      <li>Don’t skip nighttime skincare — a gentle cleanse, serum, and moisturizer before bed helps repair skin overnight.</li>
+    </ul>
+</div>
+
+<div class="feature">
+    <h3>2. Know Your Skin Type</h3>
+    <ul>
+      <li><strong>Oily Skin:</strong> Go for lightweight, gel-based products and avoid over-washing.</li>
+      <li><strong>Dry Skin:</strong> Use thick creams and avoid hot water.</li>
+      <li><strong>Combination Skin:</strong> Balance is key — treat different areas with care.</li>
+      <li><strong>Sensitive Skin:</strong> Choose fragrance-free products and always do a patch test.</li>
+    </ul>
+</div>
+
+<div class="feature">
+    <h3>3. Seasonal Skincare Hacks</h3>
+    <ul>
+      <li><strong>Summer  (March-June):</strong> Reapply sunscreen every 2–3 hours and use oil-free moisturizers.</li>
+      <li><strong>Monsoon  (July-September):</strong>Use lightweight, non-comedogenic products to prevent clogged pores due to humidity.</li>
+      <li><strong>Autumn  (October-November):</strong> Repair sun damage from summer with soothing serums like aloe vera or Vitamin C.</li>
+      <li><strong>Winter  (December-February):</strong> Switch to richer moisturizers and avoid overly hot showers.</li>
+     
+      
+    </ul>
+</div>
+
+<div class="feature">
+    <h3>4. Skincare Do’s and Don’ts</h3>
+    <ul>
+      <li><strong>✅ Do:</strong> Stay hydrated, clean your pillowcases regularly, and get enough sleep.</li>
+      <li><strong>✅ Do:</strong>Use a silk ot satin pillowcase to reduce friction and prevent breakouts .</li>
+      <li><strong>❌ Don’t:</strong> Sleep with makeup, over-exfoliate, or try too many products at once.</li>
+      <li><strong>❌ Don’t:</strong>Touch your face frequently ; it spreads bacteria and oils.</li>
+    </ul>
+</div>
+
+<div class="feature">
+    <h3>5. Ingredient Spotlights</h3>
+    <ul>
+      <li><strong>Niacinamide:</strong> Reduces pores and brightens skin.</li>
+      <li><strong>Hyaluronic Acid:</strong> Great for hydration and plumping.</li>
+      <li><strong>Salicylic Acid:</strong> Fights acne and unclogs pores.</li>
+      <li><strong>Vitamin C:</strong> Boosts collagen production and evens out skin tone.</li>
+    </ul>
+</div>
+<div class="feature">
+    <h3>6. Natural Touch</h3>
+    <ul>
+      <li>Try a green tea toner to calm redness.</li>
+      <li>Use honey as a natural moisturizer and antibacterial mask.</li>
+    </ul>
+  </div>
+</section>
+  <footer>
+    © 2025 Skinalyze. All rights reserved.
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

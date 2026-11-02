@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skinalyze Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Skinalyze</h1>
+        </div>
+       <nav>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('tips') }}">Tips and Tricks</a>
+        <a href="{{ url_for('contact') }}">Contact us</a>
+
+
+       </nav>
+    </header>
+    <div class="container">
+        <div class="results-container">
+            
+            <h3>Your Personalized Skin Analysis</h3>
+            <div class="breakdown">
+                <p>{{ breakdown }}</p>
+            </div>
+            <h3>Your Skincare Routine</h3>
+            <ul>
+                {% for step in routine %}
+                    <li>{{ step }}</li>
+                {% endfor %}
+            </ul>
+            <a href="/" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
