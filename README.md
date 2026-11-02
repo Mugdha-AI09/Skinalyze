@@ -108,11 +108,11 @@ http://127.0.0.1:5000/
 
 ### 2. Skincare Quiz
 
-![Skincare Quiz](screenshots/skincare-quiz-page.png)
+![Skincare Quiz](screenshots/skincare%20quiz%20page.png)
 
 ### 3. Tips and Tricks
 
-![Skincare Tips and Tricks](screenshots/tips-and-tricks.png)
+![Skincare Tips and Tricks](screenshots/tips%20and%20tricks.png)
 
 
 ## 🎥 Project Demonstrations
