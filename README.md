@@ -100,6 +100,20 @@ Visit the following address in your browser:
 
 http://127.0.0.1:5000/
 
+## 📸 Application Screenshots
+
+### 1. Homepage
+
+![Skinalyze Homepage](screenshots/homepage.png)
+
+### 2. Skincare Quiz
+
+![Skincare Quiz](screenshots/skincare-quiz-page.jpg)
+
+### 3. Tips and Tricks
+
+![Skincare Tips and Tricks](screenshots/tips-and-tricks.jpg)
+
 
 ## 🎥 Project Demonstrations
 
