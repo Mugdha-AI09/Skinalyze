@@ -46,7 +46,7 @@ Skinalyze/
 │   ├── logo4.png
 │   ├── script.js
 │   ├── style.css
-│   └── texture.jpeg
+│   
 │
 ├── templates/
 │   ├── about.html
