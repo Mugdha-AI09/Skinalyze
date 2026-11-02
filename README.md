@@ -33,6 +33,9 @@ The model uses features derived from user inputs, including age, skin type, skin
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```text
 Skinalyze/
 │
 ├── app.py
@@ -43,7 +46,7 @@ Skinalyze/
 │   ├── logo4.png
 │   ├── script.js
 │   ├── style.css
-│   
+│   └── texture.jpeg
 │
 ├── templates/
 │   ├── about.html
@@ -56,6 +59,8 @@ Skinalyze/
 └── demo/
     ├── Demo for linkedIn.mp4
     └── Skinalyze code vid.mp4
+```
+
 
 
 ## ⚙️ Installation and Setup
